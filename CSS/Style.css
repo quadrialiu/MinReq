@@ -10,6 +10,46 @@
     height: 100px;
 }
 
+/* Hero Header */
+.hero-header {
+    min-height: 20vh; /* 20% of viewport height */
+    background-image: url("../images/esport.jpg"); /* make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* ensures text is visible */
+}
+
+/* Dark overlay for readability */
+.hero-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* adjust opacity if needed */
+}
+
+.hero-header .container {
+    position: relative; /* makes text/logo appear above overlay */
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-header {
+        min-height: 25vh; /* slightly taller on mobile for visibility */
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
 /* Optional: nav link underline on hover */
 .nav-link:hover {
     text-decoration: underline;
@@ -22,3 +62,32 @@
     padding: 12px;
     border-radius: 6px;
 }
+
+.info-block {
+    background-color: #cce5ff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #b6d4fe;
+}
+
+.can-run-it-container {
+    display: flex;
+    flex-wrap: wrap; /* stacks on small screens */
+    gap: 20px;
+    align-items: flex-start; /* important: aligns text and video at the top */
+}
+
+.can-run-it-text {
+    flex: 1 1 400px; /* text takes available space, min 400px */
+}
+
+.can-run-it-video {
+    flex: 1 1 400px; /* video takes remaining space, min 400px */
+}
+
+.can-run-it-video iframe {
+    width: 100%;
+    max-width: 400px; /* adjust width to fit nicely next to text */
+    height: 250px;    /* your perfect height */
+}
+
