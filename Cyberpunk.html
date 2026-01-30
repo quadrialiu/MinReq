@@ -1,175 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MinReq</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .logo {
-            width: 50px;
-            height: auto;
-        }
-        main h2 {
-            margin-top: 1.5rem;
-        }
-        footer {
-            background-color: #f8f9fa;
-            padding: 10px 0;
-            text-align: center;
-            margin-top: 30px;
-        }
-        .nav-link:hover {
-            text-decoration: underline;
-        }
-        .descpic {
-            width: 200px;
-            height: auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MinReq - Cyberpunk 2077</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    .logo {
+        width: 50px;
+        height: auto;
+    }
+    main h2 {
+        margin-top: 1.5rem;
+    }
+    footer {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+    .descpic {
+        width: 200px;
+        height: auto;
+    }
+    .game-trailer iframe {
+        width: 100%;
+        height: 315px;
+    }
+</style>
 </head>
 <body>
 
-<header class="bg-primary text-white py-3">
+<header class=" text-white py-3 hero-header">
     <div class="container text-center">
-
         <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
             <img src="images/con.webp" alt="Logo" class="logo">
             <h1 class="m-0">MinReq</h1>
         </div>
-
-        <nav class="nav justify-content-around">
-            <a href="index.html" class="nav-link text-white"><u>Home</u></a>
-            <a href="#" class="nav-link text-white">New Releases</a>
-            <a href="#" class="nav-link text-white">All Games</a>
+        <nav class="nav justify-content-center">
+            <a href="index.html" class="nav-link text-white">Home</a>
+            <a href="#" class="nav-link text-white">Forum</a>
+            <a href="#" class="nav-link text-white">Top Games</a>
             <a href="contact.html" class="nav-link text-white">Contact</a>
         </nav>
-
     </div>
 </header>
 
 <main class="container my-4">
 
-    <div class="d-flex align-items-center justify-content-start gap-2 mb-3">
+  <!-- Top Section: Game Info + Video -->
+  <div class="game-header d-flex flex-wrap gap-4 align-items-start">
+
+    <!-- Left: Image + Game Info -->
+    <div class="game-info" style="flex: 1; min-width: 250px; max-width: 450px;">
+      <div class="d-flex align-items-center gap-2 mb-3">
         <img src="images/cyberpunk/cyberpunk.jpg" alt="Cyberpunk 2077" class="descpic">
         <div class="d-flex flex-column">
-            <h1 class="m-0">Cyberpunk 2077</h1>
-            <h2 class="m-0">CD Projekt Red</h2>
-            <h3 class="m-0">2020</h3>
-
-            <a href="https://www.youtube.com/watch?v=qIcTM8WXFjk"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-outline-primary mt-2">
-               ▶ Watch Cyberpunk 2077 Trailer
-            </a>
+          <h1 class="m-0">Cyberpunk 2077</h1>
+          <h2 class="m-0">CD Projekt Red</h2>
+          <h3 class="m-0">2020</h3>
         </div>
+      </div>
     </div>
 
-    <p>
-        Cyberpunk 2077 is an open-world action RPG set in the futuristic Night City,
-        a sprawling metropolis obsessed with power, glamour, and body modification.
-        Players assume the role of V, a mercenary outlaw searching for a unique implant
-        that promises immortality.
-    </p>
+    <!-- Right: Embedded Trailer -->
+    <div class="game-trailer" style="flex: 1; min-width: 300px;">
+      <iframe 
+        src="https://www.youtube.com/embed/qIcTM8WXFjk?autoplay=1&mute=1&loop=1&playlist=qIcTM8WXFjk" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+      </iframe>
+    </div>
 
-    <p>
-        The game features deep character customization, branching storylines,
-        and a vibrant world full of quests, factions, and high-tech weaponry.
-        From intense firefights to hacker-style netrunning, Cyberpunk 2077 offers
-        an immersive sci-fi experience.
-    </p>
+  </div>
 
-    <p>
-        Originally released in 2020, the game has received multiple updates and
-        expansions to improve stability and expand content, delivering an engaging
-        and narrative-driven adventure.
-    </p>
-    <h3 class="mt-5 mb-3">Screenshots</h3>
+  <!-- Game Description -->
+  <p>
+    Cyberpunk 2077 is an open-world action RPG set in the futuristic Night City,
+    a sprawling metropolis obsessed with power, glamour, and body modification.
+    Players assume the role of V, a mercenary outlaw searching for a unique implant
+    that promises immortality.
+  </p>
 
-<div class="row g-3 gallery mb-5">
-  <div class="col-md-4"><img src="images/cyberpunk/cp1.jpg" class="img-fluid"></div>
-  <div class="col-md-4"><img src="images/cyberpunk/cp2.jpg" class="img-fluid"></div>
-  <div class="col-md-4"><img src="images/cyberpunk/cp3.jpg" class="img-fluid"></div>
-</div>
+  <p>
+    The game features deep character customization, branching storylines,
+    and a vibrant world full of quests, factions, and high-tech weaponry.
+    From intense firefights to hacker-style netrunning, Cyberpunk 2077 offers
+    an immersive sci-fi experience.
+  </p>
 
-<h3 class="mb-3">PC System Requirements</h3>
-    <table class="table table-bordered mt-3">
-        <thead class="table-light">
-            <tr>
-                <th>Component</th>
-                <th>Minimum Requirements</th>
-                <th>Recommended Requirements</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Operating System</td>
-                <td>Windows 10 (64-bit)</td>
-                <td>Windows 10/11 (64-bit)</td>
-            </tr>
-            <tr>
-                <td>Processor</td>
-                <td>Intel Core i5-3570K / AMD FX-8310</td>
-                <td>Intel Core i7-4790 / AMD Ryzen 3 3200G</td>
-            </tr>
-            <tr>
-                <td>Memory (RAM)</td>
-                <td>8 GB</td>
-                <td>16 GB</td>
-            </tr>
-            <tr>
-                <td>Graphics</td>
-                <td>NVIDIA GTX 780 / AMD Radeon RX 470</td>
-                <td>NVIDIA GTX 1060 / AMD Radeon R9 Fury</td>
-            </tr>
-            <tr>
-                <td>Storage</td>
-                <td>70 GB available space</td>
-                <td>70 GB SSD recommended</td>
-            </tr>
-        </tbody>
-    </table>
-<h3 class="mt-5 mb-3">Check out other games</h3>
+  <p>
+    Originally released in 2020, the game has received multiple updates and
+    expansions to improve stability and expand content, delivering an engaging
+    and narrative-driven adventure.
+  </p>
 
-<div class="row g-3 mb-5">
-  <div class="col-md-4">
-    <div class="game-tile">
-      <img src="images/gta pics/Grand_Theft_Auto_V.png" class="img-fluid" style="max-height:180px;" alt="GTAV">
-      <div class="caption">
-        <a href="GTAV.html">GTA V</a>
+  <h3 class="mt-5 mb-3">Screenshots</h3>
+  <div class="row g-3 gallery mb-5">
+    <div class="col-md-4"><img src="images/cyberpunk/cp1.jpg" class="img-fluid"></div>
+    <div class="col-md-4"><img src="images/cyberpunk/cp2.jpg" class="img-fluid"></div>
+    <div class="col-md-4"><img src="images/cyberpunk/cp3.jpg" class="img-fluid"></div>
+  </div>
+
+  <h3 class="mb-3">PC System Requirements</h3>
+  <table class="table table-bordered mt-3">
+    <thead class="table-light">
+      <tr>
+        <th>Component</th>
+        <th>Minimum Requirements</th>
+        <th>Recommended Requirements</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Operating System</td>
+        <td>Windows 10 (64-bit)</td>
+        <td>Windows 10/11 (64-bit)</td>
+      </tr>
+      <tr>
+        <td>Processor</td>
+        <td>Intel Core i5-3570K / AMD FX-8310</td>
+        <td>Intel Core i7-4790 / AMD Ryzen 3 3200G</td>
+      </tr>
+      <tr>
+        <td>Memory (RAM)</td>
+        <td>8 GB</td>
+        <td>16 GB</td>
+      </tr>
+      <tr>
+        <td>Graphics</td>
+        <td>NVIDIA GTX 780 / AMD Radeon RX 470</td>
+        <td>NVIDIA GTX 1060 / AMD Radeon R9 Fury</td>
+      </tr>
+      <tr>
+        <td>Storage</td>
+        <td>70 GB available space</td>
+        <td>70 GB SSD recommended</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="mt-5 mb-3">Check out other games</h3>
+  <div class="row g-3 mb-5">
+    <div class="col-md-4">
+      <div class="game-tile">
+        <img src="images/EldenRing/elden.jpg" class="img-fluid" style="max-height:180px;" alt="ER">
+        <div class="caption">
+          <a href="Elden.html">Elden Ring</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="game-tile">
+        <img src="images/Minecraft/minecraft.webp" class="img-fluid" style="max-height:180px;" alt="Hogwarts Legacy">
+        <div class="caption">
+          <a href="Minecraft.html">Minecraft</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="game-tile">
+        <img src="images/rdr2/rdr2.jpg" class="img-fluid" style="max-height:180px;" alt="RDR2">
+        <div class="caption">
+          <a href="Rdr.html">Red Dead Redemption 2</a>
+        </div>
       </div>
     </div>
   </div>
 
-<div class="col-md-4">
-    <div class="game-tile">
-      <img src="images/hogwarts/hogwarts.jpg" class="img-fluid" style="max-height:180px;" alt="Hogwarts">
-      <div class="caption">
-        <a href="Hogwarts.html">Hogwarts Legacy</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="game-tile">
-      <img src="images/rdr2/rdr2.jpg" class="img-fluid" style="max-height:180px;" alt="RDR2">
-      <div class="caption">
-        <a href="Rdr.html">Red Dead Redemption 2</a>
-      </div>
-    </div>
-  </div>
-
-</div>
 </main>
 
 <footer>
-    <small>&copy; 2025 MinReq </small>
+  <small>&copy; 2025 MinReq</small>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
-
