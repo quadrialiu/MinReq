@@ -91,3 +91,136 @@
     height: 250px;    /* your perfect height */
 }
 
+
+
+.game-tile img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+    background: #000; /* optional: fills empty space nicely */
+}
+
+.game-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.18);
+}
+
+.game-tile img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.caption {
+    padding: 12px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.caption a {
+    text-decoration: none;
+    color: #222;
+}
+
+.caption a:hover {
+    color: #0d6efd; /* Bootstrap blue */
+}
+.gallery img {
+    width: 100%;
+    height: 220px;      /* forces same size */
+    object-fit: cover;  /* keeps proportions, crops excess */
+    border-radius: 10px;
+}
+
+.home-slider {
+    width: 100%;
+    max-width: 600px;      /* small slider */
+    aspect-ratio: 16/9;    /* keeps proportional size */
+    margin:  20px auto 40px auto;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.slides {
+    display: flex;
+    width: 50%;            /* 3 slides = 3*100% */
+    height: 100%;
+    animation: slideShow 9s infinite;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* keeps image proportional + fills frame */
+    display: block;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* animation */
+@keyframes slideShow {
+    0%   { transform: translateX(0); }
+    33%  { transform: translateX(0); }
+
+    36%  { transform: translateX(-100%); }
+    66%  { transform: translateX(-100%); }
+
+    69%  { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+/* Home feature layout: slider left, text right */
+.home-feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.home-slider {
+    flex: 1;
+    max-width: 600px;
+    margin: 0; /* remove auto-centering so it stays left */
+}
+
+.feature-text-left {
+    flex: 1;
+    max-width: 450px;
+}
+
+/* stack on small screens */
+@media (max-width: 768px) {
+    .home-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-slider {
+        max-width: 100%;
+    }
+}
+body {
+    background-color: blue; /* light grey example */
+}
